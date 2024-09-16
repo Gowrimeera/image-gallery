@@ -1,0 +1,44 @@
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.galleryDiv {
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+.galleryDiv img {
+    width:80%; 
+    height: 400px;  
+    border-radius: 1rem;
+}
+
+.galleryDiv img:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+
+@media (max-width:450px){
+    .galleryContainer {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    } 
+    .galleryDiv img{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
